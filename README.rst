@@ -28,7 +28,8 @@ TeX は素人のため、 Sphinx が生成する tex ファイルに手を入れ
 Sphinx の勉強には、 Sphinx-Users.jp が有用です。http://sphinx-users.jp/
 
 本プロジェクト内のサンプル作成には、 Sphinx-Users.jp のドキュメントを参考にしています。
-  プロジェクトを作る http://sphinx-users.jp/gettingstarted/make_project.html
+
+ * プロジェクトを作る http://sphinx-users.jp/gettingstarted/make_project.html
 
 XeTeX の日本語環境については、以下のサイトを参考にしています。
 
@@ -48,14 +49,18 @@ XeTeX の日本語環境については、以下のサイトを参考にして�
 * Mac OS X (10.6)
 * Sphinx 0.6.7
 * TeXLive 2009 (MacPorts を用いて、 +full でインストール)
+
   * XeTeX 3.1415926-2.2-0.9995.2 (TeX Live/MacPorts 2009_3)
 
 TODO
 ====================
 
 * 行をまたぐ文章の場合に、半角空白が入ってしまう。
+
   * 行末に % を付けることで解決は可能。自動化をどうするかを検討する必要がある。
+
 * CSV テーブルを使用した場合の PDF 出力確認
+
 
 コピーライト、ライセンス
 ========================================
