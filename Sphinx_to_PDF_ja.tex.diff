@@ -1,6 +1,4 @@
---- _build/latex/Sphinx_to_PDF_ja.tex	2010-07-21 22:37:00.000000000 +0900
-+++ Sphinx_to_PDF_ja.exapmle_for_xelatex.tex	2010-07-21 22:37:22.000000000 +0900
-@@ -1,12 +1,36 @@
+@@ -1,10 +1,34 @@
 +%!TEX TS-program = xelatex
 +%!TEX encoding = UTF-8 Unicode
 +
@@ -38,5 +36,3 @@
 +\XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
 +\XeTeXlinebreakpenalty=0
 +\renewcommand{\baselinestretch}{1}
- 
- \title{Sphinx_to_PDF_ja Documentation}
