@@ -27,6 +27,45 @@ all-pdf コマンドにて PDF 生成が可能です。ただし日本語を含�
 TeX は素人のため、 Sphinx が生成する tex ファイルに手を入れることは最低
 限にする方針です。
 
+PDF 生成方法
+=====================
+
+環境設定
+^^^^^^^^^^^^^^^^^^^^^
+
+Sphinx と TexLive が必要です。TeXLive は XeTeX だけでも良いかもしれませ
+んが未確認です。
+
+以下に、MacPorts を用いた例を示します。
+
+Sphinx のインストール::
+
+ $ sudo port install py26-sphinx
+
+必要なら、 sphinx-*-2.6 にエイリアスを設定するなどしてください。
+
+TexLive のインストール::
+ $ sudo port install texlive +full
+
+PDF 生成方法
+^^^^^^^^^^^^^^^^^^^^^
+
+Sphinx で latex を生成した後、 PDF ファイルを生成します::
+
+ $ make latex
+ $ make pdf
+
+でバック用には、PDF 生成のターゲットを構成するサブターゲットを
+個別に実行することが有用な場合があります。
+
+ $ make pdf-patch     # _build/latex/ 以下のファイルにパッチをあてる
+ $ make pdf-generate  # xelatex の実行
+ $ make pdf-open      # PDF ファイルを開く
+
+pdf-open は open コマンドを用いているため、 Mac OS X 以外では動作
+しない可能性があります。例えば、 GNOME 環境の場合は、 gnome-open を
+open にエイリアスすることで動作するはずです。
+
 参考
 =====================
 
@@ -42,11 +81,11 @@ XeTeX の日本語環境については、以下のサイトを参考にして�
  * XeLaTeX で日本語する件について [電脳世界の奥底にて] http://zrbabbler.hp.infoseek.co.jp/xelatex.html
  * XeTeX - TeX Wiki http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?XeTeX
  * XeTeXに関するメモ http://math.kyokyo-u.ac.jp/users/skiriki/
- 
+
 ライセンスはクリエイティブ・コモンズを利用しています。
 
  * Creative Commons http://creativecommons.org/
- 
+
 動作確認環境
 ====================
 
@@ -74,10 +113,17 @@ TODO
 * _build/latex/Makefile の修正をファイル置き換えから patch にする
 
 
-コピーライト、ライセンス
+コピーライト、ライセンス、免責
 ========================================
 Copyright (c) 2010 Shun'ichi Shinohara
 
 The files under this project are licensed by Creative Commons
 Attribution-ShareAlike 3.0 Unported.
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
