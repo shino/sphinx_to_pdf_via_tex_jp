@@ -171,8 +171,12 @@ htmlhelp_basename = 'Sphinx_to_PDF_jadoc'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
+# latex_documents = [
+#   ('index', 'Sphinx_to_PDF_ja.tex', u'Sphinx to PDF ja Documentation',
+#    u'shino', 'manual'),
+# ]
 latex_documents = [
-  ('index', 'Sphinx_to_PDF_ja.tex', u'Sphinx\\_to\\_PDF\\_ja Documentation',
+  ('index', 'Sphinx_to_PDF_ja.tex', u'日本語 Sphinx ドキュメントの PDF 化',
    u'shino', 'manual'),
 ]
 
