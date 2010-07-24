@@ -20,11 +20,11 @@ all-pdf コマンドにて PDF 生成が可能です。ただし日本語を含�
 
 具体的には、以下の点で修正を行ないます。
 
- * _build/latex/Makefile の置き換え
+* _build/latex/Makefile の置き換え
 
-   * latex コマンドを xelatex に置き換える
+  * latex コマンドを xelatex に置き換える
 
- * TeX ファイルの中身の置き換え
+* TeX ファイルの中身の置き換え
 
 TeX は素人のため、 Sphinx が生成する tex ファイルに手を入れることは最低
 限にする方針です。
@@ -78,22 +78,22 @@ open にエイリアスすることで動作するはずです。
 
 Sphinx の勉強には、 Sphinx-Users.jp が有用です。
 
- * http://sphinx-users.jp/
+* http://sphinx-users.jp/
 
 本プロジェクト内のサンプル作成には、 Sphinx-Users.jp のドキュメントを参
 考にしています。
 
- * プロジェクトを作る http://sphinx-users.jp/gettingstarted/make_project.html
+* プロジェクトを作る http://sphinx-users.jp/gettingstarted/make_project.html
 
 XeTeX の日本語環境については、以下のサイトを参考にしています。
 
- * XeLaTeX で日本語する件について [電脳世界の奥底にて] http://zrbabbler.hp.infoseek.co.jp/xelatex.html
- * XeTeX - TeX Wiki http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?XeTeX
- * XeTeXに関するメモ http://math.kyokyo-u.ac.jp/users/skiriki/
+* XeLaTeX で日本語する件について [電脳世界の奥底にて] http://zrbabbler.hp.infoseek.co.jp/xelatex.html
+* XeTeX - TeX Wiki http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?XeTeX
+* XeTeXに関するメモ http://math.kyokyo-u.ac.jp/users/skiriki/
 
 ライセンスはクリエイティブ・コモンズを利用しています。
 
- * Creative Commons http://creativecommons.org/
+* Creative Commons http://creativecommons.org/
 
 動作確認環境
 ====================
