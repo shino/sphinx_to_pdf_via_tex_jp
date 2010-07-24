@@ -1,4 +1,4 @@
-@@ -1,10 +1,34 @@
+@@ -1,10 +1,35 @@
 +%!TEX TS-program = xelatex
 +%!TEX encoding = UTF-8 Unicode
 +
@@ -30,7 +30,8 @@
 +%\setmonofont[Scale=MatchLowercase]{Osaka-Mono}
 +\setromanfont{Hiragino Mincho Pro W3}
 +\setsansfont{Hiragino Kaku Gothic Pro W3}
-+\setmonofont{Osaka-Mono}
++%\setmonofont{Osaka-Mono}
++\setmonofont{Menlo}
 +
 +\XeTeXlinebreaklocale "ja"
 +\XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
