@@ -21,7 +21,9 @@ all-pdf コマンドにて PDF 生成が可能です。ただし日本語を含�
 具体的には、以下の点で修正を行ないます。
 
  * _build/latex/Makefile の置き換え
-   * latex コマンドを xelatex に置き換えるだけ
+
+   * latex コマンドを xelatex に置き換える
+
  * TeX ファイルの中身の置き換え
 
 TeX は素人のため、 Sphinx が生成する tex ファイルに手を入れることは最低
@@ -45,18 +47,23 @@ Sphinx のインストール::
 必要なら、 sphinx-*-2.6 にエイリアスを設定するなどしてください。
 
 TexLive のインストール::
+
  $ sudo port install texlive +full
 
 PDF 生成方法
 ^^^^^^^^^^^^^^^^^^^^^
 
-Sphinx で latex を生成した後、 PDF ファイルを生成します::
+Sphinx で latex を生成した後、 PDF ファイルを生成します。
+
+::
 
  $ make latex
  $ make pdf
 
 でバック用には、PDF 生成のターゲットを構成するサブターゲットを
 個別に実行することが有用な場合があります。
+
+::
 
  $ make pdf-patch     # _build/latex/ 以下のファイルにパッチをあてる
  $ make pdf-generate  # xelatex の実行
@@ -69,7 +76,9 @@ open にエイリアスすることで動作するはずです。
 参考
 =====================
 
-Sphinx の勉強には、 Sphinx-Users.jp が有用です。http://sphinx-users.jp/
+Sphinx の勉強には、 Sphinx-Users.jp が有用です。
+
+ * http://sphinx-users.jp/
 
 本プロジェクト内のサンプル作成には、 Sphinx-Users.jp のドキュメントを参
 考にしています。
@@ -113,7 +122,7 @@ TODO
 * _build/latex/Makefile の修正をファイル置き換えから patch にする
 
 
-コピーライト、ライセンス、免責
+コピーライト、ライセンス、免責条項
 ========================================
 Copyright (c) 2010 Shun'ichi Shinohara
 
