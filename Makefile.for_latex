@@ -1,5 +1,11 @@
 # Makefile for Sphinx LaTeX output
 
+# Modified Sphinx generated Makefile
+#  - in pdf target, replace latex to xelatex
+#
+# It may be simpler (or flexible) to use diff and patch
+# in spite of using file replace.
+
 ALLDOCS = $(basename $(wildcard *.tex))
 ALLPDF = $(addsuffix .pdf,$(ALLDOCS))
 ALLDVI = $(addsuffix .dvi,$(ALLDOCS))
