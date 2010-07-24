@@ -34,6 +34,7 @@ XeTeX の日本語環境については、以下のサイトを参考にして�
 
  * XeLaTeX で日本語する件について [電脳世界の奥底にて] http://zrbabbler.hp.infoseek.co.jp/xelatex.html
  * XeTeX - TeX Wiki http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?XeTeX
+ * XeTeXに関するメモ http://math.kyokyo-u.ac.jp/users/skiriki/
  
 ライセンスはクリエイティブ・コモンズを利用しています。
 
