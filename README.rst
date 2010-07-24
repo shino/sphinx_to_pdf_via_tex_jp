@@ -5,14 +5,18 @@
 目的
 =====================
 
-このサンプルプロジェクトは、日本語を含む Sphinx ドキュメントから PDF ファイルを生成することを目的としています。
-あくまで個人的なサンプルです。網羅的な Sphinx の機能に対する PDF 出力確認を行うことを目的とするのもではありません。
+このサンプルプロジェクトは、日本語を含む Sphinx ドキュメントから PDF ファ
+イルを生成することを目的としています。あくまで個人的なサンプルです。網
+羅的な Sphinx の機能に対する PDF 出力確認を行うことを目的とするのもでは
+ありません。
 
 実装方法
 =====================
 
 PDF 出力のため、Sphinx 自体が持っている LaTeX 出力機能を利用します。
-Sphinx の機能だけで、英語のみのドキュメントは make -C _build/latex all-pdf コマンドにて PDF 生成が可能です。ただし日本語を含むドキュメントの場合、エラーが発生するため、いくつかの修正が必要になります。
+Sphinx の機能だけで、英語のみのドキュメントは make -C _build/latex
+all-pdf コマンドにて PDF 生成が可能です。ただし日本語を含むドキュメント
+の場合、エラーが発生するため、いくつかの修正が必要になります。
 
 具体的には、以下の点で修正を行ないます。
 
@@ -20,14 +24,16 @@ Sphinx の機能だけで、英語のみのドキュメントは make -C _build/
    * latex コマンドを xelatex に置き換えるだけ
  * TeX ファイルの中身の置き換え
 
-TeX は素人のため、 Sphinx が生成する tex ファイルに手を入れることは最低限にする方針です。
+TeX は素人のため、 Sphinx が生成する tex ファイルに手を入れることは最低
+限にする方針です。
 
 参考
 =====================
 
 Sphinx の勉強には、 Sphinx-Users.jp が有用です。http://sphinx-users.jp/
 
-本プロジェクト内のサンプル作成には、 Sphinx-Users.jp のドキュメントを参考にしています。
+本プロジェクト内のサンプル作成には、 Sphinx-Users.jp のドキュメントを参
+考にしています。
 
  * プロジェクトを作る http://sphinx-users.jp/gettingstarted/make_project.html
 
@@ -66,5 +72,6 @@ TODO
 ========================================
 Copyright (c) 2010 Shun'ichi Shinohara
 
-The files under this project are licensed by Creative Commons Attribution-ShareAlike 3.0 Unported.
+The files under this project are licensed by Creative Commons
+Attribution-ShareAlike 3.0 Unported.
 
