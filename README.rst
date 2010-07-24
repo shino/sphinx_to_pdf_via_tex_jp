@@ -135,6 +135,8 @@ TODO
 
 * このファイル自体(README.rst)が、 github で見ると行間が詰まっていて読みにくい。
 
+  * reST から HTML の line-height の指定が可能か?
+
 コピーライト、ライセンス、免責条項
 ========================================
 Copyright (c) 2010 Shun'ichi Shinohara
