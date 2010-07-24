@@ -12,7 +12,7 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
-.PHONY: help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest
+.PHONY: help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest pdf pdf-patch pdf-generate pdf-open
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -26,6 +26,7 @@ help:
 	@echo "  changes   to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck to check all external links for integrity"
 	@echo "  doctest   to run all doctests embedded in the documentation (if enabled)"
+	@echo "  pdf       to make PDF, using xelatex"
 
 clean:
 	-rm -rf $(BUILDDIR)/*
@@ -61,9 +62,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Sphinx_to_PDF_ja.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/firsttrial.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Sphinx_to_PDF_ja.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/firsttrial.qhc"
 
 latex:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
@@ -87,3 +88,15 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+pdf-patch:
+	cp Makefile.for_latex _build/latex/Makefile
+	patch _build/latex/Sphinx_to_PDF_ja.tex < Sphinx_to_PDF_ja.tex.diff
+
+pdf-generate:
+	make -C _build/latex all-pdf
+
+pdf-open:
+	open _build/latex/Sphinx_to_PDF_ja.pdf
+
+pdf: clean latex pdf-patch pdf-generate pdf-open
