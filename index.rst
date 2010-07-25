@@ -6,7 +6,7 @@ Welcome to Book Review's documentation!
 
    expert_python
    art_of_community
-   samples
+   examples
 
 Indices and tables
 ==================

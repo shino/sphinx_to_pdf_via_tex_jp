@@ -13,7 +13,7 @@ Sphinx 記法と日本語、文字に関するサンプル
 画像
 =====
 
-.. image:: sphinx.png
+.. image:: _static/sphinx.png
 
 強調
 =====
@@ -31,5 +31,5 @@ CSV テーブル
 .. csv-table:: 郵便番号表 東京
    :header: "コード", "5桁", "7桁", "都道府県名", "市区町村名", "町域名", "都道府県名", "市区町村名", "町域名", "A", "B", "C", "D", "E", "F"
    :widths: 4, 5, 5, 11, 12, 13, 11, 12, 13, 2,2,2,2,2,2
-   :file: zipcode_tokyo.csv
+   :file: _static/zipcode_tokyo.csv
 
