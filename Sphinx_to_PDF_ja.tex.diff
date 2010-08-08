@@ -1,6 +1,4 @@
---- Sphinx_to_PDF_ja.tex.original	2010-08-08 15:08:59.000000000 +0900
-+++ Sphinx_to_PDF_ja.tex	2010-08-08 15:11:18.000000000 +0900
-@@ -1,15 +1,39 @@
+@@ -1,12 +1,36 @@
 +%!TEX TS-program = xelatex
 +%!TEX encoding = UTF-8 Unicode
 +
@@ -41,6 +39,3 @@
 +\XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
 +\XeTeXlinebreakpenalty=0
 +\renewcommand{\baselinestretch}{1}
- 
- \title{日本語 Sphinx ドキュメントの PDF 化}
- \date{August 08, 2010}
