@@ -173,5 +173,7 @@ CSV テーブル
 CSV を list-table に変換して include
 ============================================================
 
+.. tabularcolumns:: |p{1cm}|p{0.7cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{2cm}|p{0.2cm}|p{0.2cm}|p{0.2cm}|p{0.2cm}|p{0.2cm}|p{0.2cm}|
+
 .. include:: _static/zipcode_tokyo.rst
 
