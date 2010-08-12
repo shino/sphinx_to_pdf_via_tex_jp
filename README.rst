@@ -154,6 +154,12 @@ TODO
 
   * 数字、半角カナのセルでは、セルの幅に収まらずはみ出している値がある
 
+    * フォント設定の変更で収まるようになった
+
+	* 変更前 ``\setromanfont{Hiragino Mincho Pro W3}``
+
+	* 変更後 ``\setromanfont[Scale=MatchLowercase]{Hiragino Mincho Pro W3}``
+
 * 警告のディレクティブの場合に、"Danger", "Note" などの文字列部分を変更できるか試す。
 
 * 行をまたぐ文章の場合、行またぎ箇所に半角空白が入ってしまうことへの対応。
