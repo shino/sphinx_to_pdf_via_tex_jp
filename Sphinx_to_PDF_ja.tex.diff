@@ -1,4 +1,4 @@
-@@ -1,12 +1,36 @@
+@@ -1,12 +1,39 @@
 +%!TEX TS-program = xelatex
 +%!TEX encoding = UTF-8 Unicode
 +
@@ -24,16 +24,19 @@
 +\usepackage{xltxtra}
 +
 +\defaultfontfeatures{Mapping=tex-text}
++
 +%\setromanfont[Mapping=tex-text]{Hoefler Text}
 +%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
 +%\setmonofont[Scale=MatchLowercase]{Andale Mono}
++
 +%\setromanfont[Mapping=tex-text]{Hiragino Mincho Pro W3}
 +%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Hiragino Kaku Gothic Pro W3}
 +%\setmonofont[Scale=MatchLowercase]{Osaka-Mono}
-+\setromanfont{Hiragino Mincho Pro W3}
-+\setsansfont{Hiragino Kaku Gothic Pro W3}
-+%\setmonofont{Osaka-Mono}
-+\setmonofont{Menlo}
++
++\setromanfont[Scale=MatchLowercase,Mapping=tex-text]{Hiragino Mincho Pro W3}
++\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Hiragino Kaku Gothic Pro W3}
++\setmonofont[Scale=MatchLowercase]{Osaka-Mono}
++%\setmonofont[Scale=MatchLowercase,Mapping=tex-text]{Menlo}
 +
 +\XeTeXlinebreaklocale "ja"
 +\XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
